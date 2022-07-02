@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Jogo da Velha</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <script>
+
+        let boxes = document.getElementsByClassName('box')
+
+        let jogador1 = 'x'
+        let jogador2 = 'o'
+
+
+        function mudarJogo() {
+             
+            if (jogador1 === 'x'){
+                element.innerHTML = 'x'
+
+            } if (jogador2 === 'o') {
+                else (jogador2 === 'o')
+                element.innerHTML = 'o'
+            }
+
+        }
+
+
+        for (let i = 0; i < boxes.lenght; i++) {
+            const element = boxes[i];
+
+            function selecionarBox() {
+                if (element.innerHTML === '') {
+                    if (jogador1 === 'x') {
+                        element.innerHTML = 'x'
+                    } else {
+                        element.innerHTML = 'o'
+                    }
+                    mudarJogo()
+                }
+
+            }
+            element.addEventListener('click', selecionarBox)
+        }
+
+
+
+
+    </script>
+
+
+
+    <style>
+        .box {
+            width: 90px;
+            height: 90px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .spanX {
+            color: red;
+        }
+
+        .spanY {
+            color: green
+        }
+    </style>
+</body>
+
+</html>

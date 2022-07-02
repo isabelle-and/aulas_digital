@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index1</title>
+</head>
+<body>
+    <section id="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">3</div>
+        <div class="box">6</div>
+        
+
+    </section>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+
+        }
+    </style>
+    <script>
+        let boxes = document.getElementsByClassName ('box')
+        //o for para modificar o número de cada box. O inner serve para modificar o HTML
+        
+        
+        
+        for (let i = 0; i < boxes.length; i++) {
+             boxes[i].innerHTML = '10'
+
+
+        }
+             /*box.style.color = 'red'
+             if (if < 2) {
+                 box.style.colr = 'yellow'
+             }
+             
+         }
+         //ou fazer assim 
+        /* let boxes = document.getElementsByClassName (box)
+
+         let box = boxes [0]
+        boxes[0].innerHTML = '10'
+        boxes[1].innerHTML = '10'       
+        boxes[2].innerHTML = '10'
+
+
+        
+
+    </script>
+
+
+
+
+
+</body>
+</html>

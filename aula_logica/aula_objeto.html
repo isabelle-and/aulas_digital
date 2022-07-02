@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+let detranParangaba = [
+ {nome: 'Carlos', idade: 31, aprovado:true, categoria: 'A'}
+ {nome:'José', idade: 12, aprovado: true, categoria: 'A'}
+ {nome: 'João', idade 31, aprovado: true, categoria: 'A'}
+
+]
+
+letdetranBezerra = [
+{nome: 'Carlos', idade: 31, aprovado:true, categoria: 'A'}
+ {nome:'José', idade: 12, aprovado: true, categoria: 'A'}
+ {nome: 'João', idade 31, aprovado: true, categoria: 'B'}
+]
+
+function exibirAprovados(lista, categoria){
+for (let i = 0; i < lista.length; i++) {
+    let candidato = lista[i];
+    console.log(candidato.nome)  
+    if (
+        candidato.aprovado && candidato.idade >=18 && candidato.categoria === categoria
+    ) {
+        console.log (candidato.nome)
+    }
+    
+    
+    /*  ou
+    para puxar somente categoria A
+    if (cancdidato.aprovado && candidato.idade >= 18 && candidato.categoria === 'A' ) {
+        console.log(candidato.nome)
+    }
+}
+
+
+
+return 1
+
+}
+
+/*function exibirAprovados (lista, categoria) {
+console.log(lista [2].nome)
+return 1
+}
+
+//function x (a) {
+    //console.log (1)
+//}
+//x()
+//x(1)
+
+//function soma (a,b){
+   // let result = a+b
+   // return result
+//}
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>

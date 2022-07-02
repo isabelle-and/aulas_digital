@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    font-family: 'INter' 'sans-serif';
+    
+}
+
+.containernav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* line-height: vai ser o tamanho da font size x3/  no botao pode colocar display flex e align itens center e justify content center */
+.containernav.login{
+    border-radius: ;
+}
+
+.main-nav{
+
+}
+
+.main-nav-ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.main_nav_li{
+    margin
+
+
+}
+.container{
+   
+    height: calc(100vh - 40px)
+    background-color: violet;
+}
+
+.tickets{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}

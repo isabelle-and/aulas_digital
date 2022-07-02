@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento e Array</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+
+    
+    <script> 
+        
+        let boxes = document.getElementsByClassName ('box') 
+         //usando array
+        
+    for (let i = 0; i < boxes.length; i++) {
+        let element = boxes[i];
+        let cores = ['red', 'blue', 'green']
+
+            function changecolour () {  
+                element.style.background = cores[i]
+
+            }
+            element.addEventListener ('click', changecolour )
+     }
+  
+  
+     function exercicio1 () {
+ let boxes = document.getElementsByClassName ('box') 
+ let cores = ['red', 'blue', 'green']      
+        
+   for (let i = 0; i < boxes.length; i++) {
+       let element = boxes[i];
+      
+          function changecolour () {  
+            if  (element.style.background ===''){
+              element.style.background = cores[i]  
+          }else{
+           element.style.background = ''
+             }
+          }
+            element.addEventListener ('click', changecolour )
+    }
+}
+
+
+
+    </script>
+
+
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+    </style>
+</body>
+</html>
